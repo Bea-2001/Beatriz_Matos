@@ -1,0 +1,144 @@
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f8fafc;
+}
+
+
+body {
+    background-color: #1a3623;
+    color: #f8fafc;
+    font-family: 'karla', sans-serif;
+
+}
+
+hr {
+    border-color: #d6d3d1;
+    border-width: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.name-box {
+    padding-top: 33vh;
+    min-height: 100vh;
+    background-image: url(../img/book-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.name {
+    font-size: 96px;
+    font-family: 'Pacifico', serif;
+    margin-bottom: 24px;
+    color: black;
+
+}
+
+.caixa-nome {
+    background-color: rgb(240, 255, 255, 0.75);
+    padding: 0px 10px;
+    border-radius: 8px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+
+}
+
+.curso{
+    background-color: rgb(240, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    color: black;
+}
+
+.sobre-mim{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+/* =========================================================
+   Estilos da Tabela de Módulos (Tema Verde Esmeralda)
+========================================================= */
+
+.modulos-section {
+    max-width: 1140px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.modulos-title {
+    color: #f5f5f4;
+    /* Branco sujo para leitura fácil */
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: rgb(28, 25, 23);
+    /* Fundo escuro */
+    border-radius: 8px;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    /* Contorno verde esmeralda translúcido */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.tabela-modulos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabela-modulos th,
+.tabela-modulos td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgb(41, 37, 36);
+    /* Linha divisória discreta */
+}
+
+.tabela-modulos th {
+    background-color: rgba(16, 185, 129, 0.15);
+    /* Fundo do cabeçalho com um toque de verde */
+    color: rgb(16, 185, 129);
+    /* Texto do cabeçalho em verde esmeralda vibrante */
+    /* Removi a fonte Playfair aqui para ficar com um ar mais moderno (podes voltar a pôr se preferires o estilo clássico) */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tabela-modulos td {
+    color: #d6d3d1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o rato por cima da linha */
+.tabela-modulos tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabela-modulos tbody tr:hover {
+    background-color: rgba(16, 185, 129, 0.08);
+    /* Brilho verde muito suave ao passar o rato */
+}
+
+.tabela-modulos tbody tr:hover td {
+    color: #ffffff;
+    /* O texto fica branco puro para dar destaque */
+}
+
+/* Remove a linha de baixo do último item */
+.tabela-modulos tbody tr:last-child td {
+    border-bottom: none;
+}
