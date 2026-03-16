@@ -60,8 +60,9 @@ hr {
 }
 
 .sobre-mim{
-    margin-left: 300px;
-    margin-right: 300px;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
 /* =========================================================
@@ -141,4 +142,302 @@ hr {
 /* Remove a linha de baixo do último item */
 .tabela-modulos tbody tr:last-child td {
     border-bottom: none;
+}
+
+/* =========================================================
+   Secção: As Minhas Áreas (Cartões)
+========================================================= */
+
+.areas-section {
+    max-width: 1140px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.areas-subtitle {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8; /* Fica ligeiramente mais claro que o texto normal */
+}
+
+/* A Grelha que alinha os cartões lado a lado */
+.areas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaço entre os cartões */
+   
+}
+
+/* O estilo de cada Cartão */
+.area-card {
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo meio transparente elegante */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Linha muito suave à volta */
+    border-radius: 8px;
+    padding: 40px 30px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* O que acontece quando passas o rato por cima do cartão */
+.area-card:hover {
+    transform: translateY(-10px); /* O cartão sobe 10 pixéis */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Ganha uma sombra maior */
+    border-color: rgba(255, 255, 255, 0.4); /* A borda fica mais visível */
+}
+
+/* O Ícone/Emoji */
+.area-icon {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* O Título dentro do Cartão */
+.area-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* O Texto dentro do Cartão */
+.area-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   Secção: Competências Linguísticas (Barras de Progresso)
+========================================================= */
+
+.linguas-section {
+    max-width: 800px; /* É um pouco mais estreita que as outras para o texto não ficar muito longe da barra */
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.linguas-subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* A caixa escura que envolve todas as línguas */
+.linguas-container {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lingua-item {
+    margin-bottom: 25px;
+    text-align: left; /* Garante que o texto fica alinhado à esquerda dentro da caixa */
+}
+
+/* Tira a margem do último idioma para a caixa ficar perfeitamente alinhada no fundo */
+.lingua-item:last-child {
+    margin-bottom: 0; 
+}
+
+/* A linha onde está o nome da língua e o nível */
+.lingua-info {
+    display: flex;
+    justify-content: space-between; /* Empurra o nome para a esquerda e o nível para a direita */
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.lingua-nivel {
+    font-weight: normal;
+    opacity: 0.8; /* Fica ligeiramente mais claro que o nome da língua */
+}
+
+/* A barra "vazia" (fundo) */
+.barra-fundo {
+    width: 100%;
+    height: 10px; /* Grossura da barra */
+    background-color: rgba(255, 255, 255, 0.15); /* Fundo subtil */
+    border-radius: 10px;
+    overflow: hidden; /* Corta os cantos para não ficarem quadrados */
+}
+
+/* A barra "cheia" (o teu progresso real) */
+.barra-progresso {
+    height: 100%;
+    background-color: #ffffff; /* A cor da barra (branco fica excelente num fundo verde) */
+    border-radius: 10px;
+    transition: width 1s ease-in-out; /* Se alterares a largura, ela tem um efeito suave */
+}
+
+/* =========================================================
+   Widget Goodreads (A Minha Estante)
+========================================================= */
+
+.gr_custom_container_ {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda suave */
+    border-radius: 10px;
+    padding: 20px;
+    
+    /* O fundo meio transparente a combinar com as tuas outras secções! */
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #f8fafc; 
+    
+    width: 600px;   /* Caixa mais larga */
+    max-width: 90%; /* Para não estragar em telemóveis */
+    margin: 0 auto; /* Centrar perfeitamente no ecrã */
+}
+
+.gr_custom_header_ {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+
+/* Cor do título da estante */
+.gr_custom_header_ a {
+    color: #ffffff;
+}
+
+.gr_custom_each_container_ {
+    width: 100%;
+    clear: both;
+    margin-bottom: 15px;
+    overflow: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tamanho das capas dos livros (aumentadas) */
+.gr_custom_book_container_ {
+    overflow: hidden;
+    height: 90px; 
+    float: left;
+    margin-right: 15px;
+    width: 60px;
+}
+
+.gr_custom_author_ {
+    font-size: 14px; /* Letra maior para os autores */
+}
+
+/* Cores dos títulos e autores para se lerem bem no fundo escuro */
+.gr_custom_title_ a, .gr_custom_author_ a {
+    color: #f8fafc; 
+    text-decoration: none;
+}
+
+/* Sublinha o nome do livro quando passas o rato */
+.gr_custom_title_ a:hover {
+    text-decoration: underline;
+}
+
+.gr_custom_tags_ {
+    font-size: 12px;
+    color: #a8a29e;
+}
+
+.gr_custom_rating_ {
+    float: right;
+}
+/* =========================================================
+   Secção: Portefólio Web (Projetos)
+========================================================= */
+
+.projetos-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.projetos-subtitle {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.projetos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Para se adaptarem a ecrãs mais pequenos */
+}
+
+.projeto-card {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 400px;
+    text-align: left;
+    overflow: hidden; /* Corta a imagem nas pontas para respeitar os cantos redondos do cartão! */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px); /* Levanta um pouco quando passas o rato */
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* O espaço reservado para o print do teu site */
+.projeto-imagem img {
+    width: 100%;
+    height: 220px; /* Garante que as imagens ficam todas com a mesma altura */
+    object-fit: cover; /* Impede que a imagem fique "esmagada" ou esticada */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projeto-info {
+    padding: 25px;
+}
+
+.projeto-info h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.projeto-info p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #e2e8f0;
+}
+
+/* As "Etiquetas" com as tecnologias */
+.projeto-tags {
+    margin-bottom: 25px;
+}
+
+.projeto-tags span {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 8px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* O Botão de Visitar Site */
+.btn-projeto {
+    display: inline-block;
+    background-color: #f8fafc; /* Um branco acinzentado */
+    color: #1e293b; /* Letra escura para contraste */
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-projeto:hover {
+    background-color: #cbd5e1; /* Fica um pouco mais escuro ao passar o rato */
 }
