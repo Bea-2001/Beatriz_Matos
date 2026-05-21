@@ -441,3 +441,141 @@ hr {
 .btn-projeto:hover {
     background-color: #cbd5e1; /* Fica um pouco mais escuro ao passar o rato */
 }
+
+/* =========================================================
+   Secção: Curriculum Vitae (CV)
+========================================================= */
+
+.cv-section {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* A caixa meio transparente igual à das línguas e áreas */
+.cv-caixa {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.cv-caixa p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+/* O Botão Gigante de Download */
+.btn-cv {
+    display: inline-block;
+    background-color: #f8fafc; /* Branco/Cinza clarinho */
+    color: #1e293b; /* Texto escuro */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 30px; /* Cantos muito redondos (estilo pílula) */
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+/* O efeito quando se passa o rato */
+.btn-cv:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px); /* Levanta um bocadinho */
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3); /* A sombra fica branca, criando um "brilho" */
+}
+
+/* =========================================================
+   Botões do CV e Passaporte Qualifica
+========================================================= */
+
+/* Caixa para alinhar os dois botões lado a lado */
+.cv-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os dois botões */
+    flex-wrap: wrap; /* Se o ecrã for pequeno, o Passaporte desce para a linha de baixo */
+    margin-top: 10px;
+}
+
+
+
+/* Efeito ao passar o rato no Passaporte Qualifica */
+.btn-qualifica:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fica só com uma nuvem branca subtil */
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2); 
+}
+
+/* =========================================================
+   Secção: Contactos
+========================================================= */
+
+.contactos-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.contactos-subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* A caixa grande que envolve os cartões */
+.contactos-caixa {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+/* Flexbox para colocar os três contactos lado a lado */
+.contactos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para descerem em ecrãs de telemóvel */
+}
+
+/* O estilo individual de cada meio de contacto */
+.contacto-item {
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo quase transparente */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 220px;
+    text-align: center;
+    text-decoration: none; /* Tira o sublinhado dos links */
+    color: #f8fafc;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* O efeito ao passar o rato (hover) */
+.contacto-item:hover {
+    transform: translateY(-8px); /* Levanta 8 pixéis */
+    background-color: rgba(255, 255, 255, 0.15); /* Fica um pouco mais claro */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contacto-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contacto-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contacto-item p {
+    font-size: 14px;
+    opacity: 0.8;
+}
